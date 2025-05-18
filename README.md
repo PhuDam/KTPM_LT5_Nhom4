@@ -1,5 +1,5 @@
 # KTPM_LT5_Nhom4
-Web Mua Bán Sản Phẩm (Phiên bản Local)
+Web Mua Bán Sản Phẩm 
 
 Giới thiệu
 Đây là một dự án website mua bán đơn giản, chạy trên máy chủ local (local server) để phục vụ việc demo và phát triển. Người dùng có thể tìm kiếm, xem và mua sản phẩm ngay trên máy tính của mình mà không cần kết nối internet hay deploy lên server bên ngoài.
