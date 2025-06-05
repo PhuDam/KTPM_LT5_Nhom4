@@ -1,21 +1,14 @@
 # KTPM_LT5_Nhom4
-Web Mua Bán Sản Phẩm 
+Giới thiệu về Trang Web Đặt Khách Sạn
+Chào mừng bạn đến với trang web đặt khách sạn của chúng tôi! Đây là nền tảng giúp bạn dễ dàng tìm kiếm, so sánh và đặt phòng khách sạn phù hợp với nhu cầu của mình.
 
-Giới thiệu
-Đây là một dự án website mua bán đơn giản, chạy trên máy chủ local (local server) để phục vụ việc demo và phát triển. Người dùng có thể tìm kiếm, xem và mua sản phẩm ngay trên máy tính của mình mà không cần kết nối internet hay deploy lên server bên ngoài.
+Các Tính Năng Nổi Bật
+Tìm kiếm đa dạng: Khám phá hàng ngàn khách sạn trên khắp thế giới với nhiều mức giá và tiện nghi khác nhau.
+So sánh thông minh: Dễ dàng so sánh các lựa chọn để đưa ra quyết định tốt nhất.
+Đặt phòng nhanh chóng: Quy trình đặt phòng đơn giản, chỉ với vài cú nhấp chuột.
+Ưu đãi độc quyền: Thường xuyên cập nhật các chương trình khuyến mãi hấp dẫn.
+Đánh giá khách quan: Tham khảo đánh giá từ những khách hàng đã trải nghiệm để có cái nhìn chân thực.
+Bắt Đầu Sử Dụng
+Bạn có thể bắt đầu tìm kiếm khách sạn ngay lập tức bằng cách nhập điểm đến, ngày nhận và trả phòng, cùng với số lượng khách.
 
-Tính năng cơ bản
-Hiển thị danh sách sản phẩm với hình ảnh, tên và giá.
-
-Thêm sản phẩm vào giỏ hàng và xem tổng tiền.
-
-Quản lý đơn giản giỏ hàng (thêm, xóa sản phẩm).
-
-Giao diện đơn giản, thân thiện.
-
-Công nghệ sử dụng
-Frontend: HTML, CSS, JavaScript
-
-Backend: Node.js với Express (chạy local server)
-
-Cơ sở dữ liệu: File JSON hoặc bộ nhớ tạm (không sử dụng database phức tạp)
+Cảm ơn bạn đã ghé thăm! Hy vọng bạn sẽ có trải nghiệm đặt phòng tuyệt vời trên trang web của chúng tôi.ON hoặc bộ nhớ tạm (không sử dụng database phức tạp)
