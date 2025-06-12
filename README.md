@@ -72,7 +72,7 @@ Chân trang (Footer): Chứa thông tin bản quyền và các liên kết mạn
 Thiết kế đáp ứng (Responsive): Giao diện được tối ưu hóa để hiển thị tốt trên cả máy tính để bàn và thiết bị di động.
 
 2. Trang Đăng nhập & Đăng ký (login.html)
-3. 
+
 Trang này cung cấp một giao diện hiện đại, sử dụng hiệu ứng "glassmorphism" (nền mờ như kính) để người dùng có thể đăng nhập hoặc tạo tài khoản mới.
 
 Giao diện Tab linh hoạt
