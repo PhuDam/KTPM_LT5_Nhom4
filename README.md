@@ -5,11 +5,15 @@ VIVUVIETNAM là một trang web đặt phòng khách sạn trực tuyến đư�
 
 Dự án này bao gồm hai trang chính: trang chủ để khám phá và đặt phòng, và trang đăng nhập/đăng ký cho người dùng.
 
-Công nghệ sử dụng
+Công nghệ sử dụng:
 Giao diện người dùng (Frontend): HTML, CSS, JavaScript
+
 Framework CSS: TailwindCSS
+
 Thư viện biểu tượng: FontAwesome
+
 Tính năng nổi bật
+
 1. Trang Chủ (home.html)
 Trang chủ là trung tâm của trải nghiệm, cung cấp đầy đủ các công cụ cần thiết để người dùng tìm và đặt được phòng khách sạn ưng ý.
 
