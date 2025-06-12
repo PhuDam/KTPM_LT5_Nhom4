@@ -1,0 +1,1254 @@
+<html class="scroll-smooth" lang="vi">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   VIVUVIETNAM - Đặt phòng khách sạn tại Việt Nam
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-50 min-h-screen flex flex-col">
+  <!-- Header -->
+  <header class="bg-white shadow sticky top-0 z-50">
+   <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+    <a class="flex items-center text-indigo-600 font-bold text-3xl" href="#">
+     <img alt="Logo VIVUVIETNAM hình chữ V màu xanh dương" class="w-10 h-10 mr-3 rounded-md object-cover" height="40" src="https://storage.googleapis.com/a1aa/image/c1a25384-c2a6-47a4-28f6-aac6d12649b1.jpg" width="40"/>
+     VIVUVIETNAM
+    </a>
+    <nav class="hidden md:flex space-x-8 text-gray-700 font-semibold">
+     <a class="hover:text-indigo-600 transition" href="#hotels">
+      Khách sạn
+     </a>
+     <a class="hover:text-indigo-600 transition" href="#about">
+      Giới thiệu
+     </a>
+     <a class="hover:text-indigo-600 transition" href="#promotions">
+      Khuyến mãi
+     </a>
+     <a class="hover:text-indigo-600 transition" href="#contact">
+      Liên hệ
+     </a>
+     <a class="hover:text-indigo-600 transition" href="https://vivuvietnam.com/them" rel="noopener" target="_blank">
+      Địa điểm vui chơi
+     </a>
+    </nav>
+    <button class="md:hidden text-gray-700 focus:outline-none" id="mobile-menu-button">
+     <i class="fas fa-bars fa-lg">
+     </i>
+    </button>
+   </div>
+   <nav class="hidden md:hidden bg-white border-t border-gray-200" id="mobile-menu">
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-indigo-50" href="#hotels">
+     Khách sạn
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-indigo-50" href="#about">
+     Giới thiệu
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-indigo-50" href="#promotions">
+     Khuyến mãi
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-indigo-50" href="#contact">
+     Liên hệ
+    </a>
+    <a class="block px-4 py-3 hover:bg-indigo-50" href="https://vivuvietnam.com/them" rel="noopener" target="_blank">
+     Địa điểm vui chơi
+    </a>
+   </nav>
+  </header>
+  <!-- Hero Section -->
+  <section class="bg-indigo-600 text-white py-20 px-4">
+   <div class="container mx-auto max-w-5xl text-center">
+    <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
+     Đặt phòng khách sạn tại Việt Nam dễ dàng cùng VIVUVIETNAM
+    </h1>
+    <p class="text-lg md:text-xl mb-8">
+     Tìm kiếm và đặt phòng khách sạn tốt nhất với giá ưu đãi, thanh toán nhanh chóng và an toàn.
+    </p>
+    <form class="flex flex-col md:flex-row justify-center gap-4 max-w-4xl mx-auto" id="search-form">
+     <input class="rounded-md px-4 py-3 flex-grow text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-400" id="search-location" placeholder="Nhập địa điểm, khách sạn hoặc khu vực" required="" type="text"/>
+     <input class="rounded-md px-4 py-3 text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-400" id="checkin-date" min="" required="" type="date"/>
+     <input class="rounded-md px-4 py-3 text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-400" id="checkout-date" min="" required="" type="date"/>
+     <button class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold rounded-md px-6 py-3 transition" type="submit">
+      Tìm kiếm
+     </button>
+    </form>
+   </div>
+  </section>
+  <!-- Promotions Section -->
+  <section class="container mx-auto px-4 py-12 max-w-7xl bg-white rounded-lg shadow-md mb-12" id="promotions">
+   <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">
+    Khuyến mãi nổi bật
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="bg-indigo-50 rounded-lg p-6 flex flex-col items-center text-center shadow hover:shadow-lg transition cursor-pointer">
+     <img alt="Banner quảng cáo giảm giá 20% cho phòng Deluxe tại khách sạn sang trọng" class="rounded-md mb-4 object-cover w-full h-48" height="250" loading="lazy" src="https://storage.googleapis.com/a1aa/image/fe2eaefb-6596-4a1c-7a40-34830cf80f5f.jpg" width="400"/>
+     <h3 class="text-xl font-semibold text-indigo-700 mb-2">
+      Giảm 20% phòng Deluxe
+     </h3>
+     <p class="text-gray-700">
+      Áp dụng cho khách sạn 5 sao tại Hà Nội và Đà Nẵng, đặt phòng trước 30 ngày.
+     </p>
+    </div>
+    <div class="bg-indigo-50 rounded-lg p-6 flex flex-col items-center text-center shadow hover:shadow-lg transition cursor-pointer">
+     <img alt="Banner quảng cáo ưu đãi cuối tuần giảm giá phòng khách sạn tại Việt Nam" class="rounded-md mb-4 object-cover w-full h-48" height="250" loading="lazy" src="https://storage.googleapis.com/a1aa/image/9463d154-5add-4bec-9394-c985df23d2bb.jpg" width="400"/>
+     <h3 class="text-xl font-semibold text-indigo-700 mb-2">
+      Ưu đãi cuối tuần
+     </h3>
+     <p class="text-gray-700">
+      Giảm đến 15% cho các khách sạn tại Đà Lạt và Nha Trang vào cuối tuần.
+     </p>
+    </div>
+    <div class="bg-indigo-50 rounded-lg p-6 flex flex-col items-center text-center shadow hover:shadow-lg transition cursor-pointer">
+     <img alt="Banner quảng cáo combo phòng khách sạn và vé tham quan tại Việt Nam" class="rounded-md mb-4 object-cover w-full h-48" height="250" loading="lazy" src="https://storage.googleapis.com/a1aa/image/604dd016-c2ff-494b-960b-753af184f087.jpg" width="400"/>
+     <h3 class="text-xl font-semibold text-indigo-700 mb-2">
+      Combo phòng &amp; vé tham quan
+     </h3>
+     <p class="text-gray-700">
+      Tiết kiệm đến 25% khi đặt combo phòng khách sạn và vé tham quan các điểm du lịch nổi tiếng.
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Hotels Listing -->
+  <section class="container mx-auto px-4 py-12 max-w-7xl" id="hotels">
+   <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">
+    Khách sạn nổi bật
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="hotel-list">
+    <div aria-label="Xem chi tiết khách sạn Khách sạn Sofitel Legend Metropole Hà Nội" aria-pressed="false" class="bg-white rounded-lg shadow hover:shadow-lg transition cursor-pointer flex flex-col" role="button" tabindex="0">
+     <img alt="Hình ảnh mặt tiền khách sạn Khách sạn Sofitel Legend Metropole Hà Nội tại Hà Nội vào ban ngày" class="rounded-t-lg object-cover w-full h-48" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/ce1ca889-8509-4984-908d-bf0a5fba7311.jpg" width="600"/>
+     <div class="p-4 flex flex-col flex-grow">
+      <h3 class="text-xl font-semibold text-gray-800 mb-1">
+       Khách sạn Sofitel Legend Metropole Hà Nội
+      </h3>
+      <p class="text-gray-600 mb-2">
+       Hà Nội
+      </p>
+      <div class="flex items-center mb-2">
+       <div class="text-yellow-400 mr-2">
+        ★★★★½
+       </div>
+       <span class="text-gray-700 font-semibold">
+        4.8
+       </span>
+      </div>
+      <p class="text-indigo-600 font-bold text-lg mt-auto">
+       3.500.000 ₫ / đêm
+      </p>
+     </div>
+    </div>
+    <div aria-label="Xem chi tiết khách sạn Khách sạn InterContinental Đà Nẵng" aria-pressed="false" class="bg-white rounded-lg shadow hover:shadow-lg transition cursor-pointer flex flex-col" role="button" tabindex="0">
+     <img alt="Hình ảnh mặt tiền khách sạn Khách sạn InterContinental Đà Nẵng tại Đà Nẵng vào ban ngày" class="rounded-t-lg object-cover w-full h-48" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/1e2d000e-5a36-43d3-399b-0dbcf4cb3d6a.jpg" width="600"/>
+     <div class="p-4 flex flex-col flex-grow">
+      <h3 class="text-xl font-semibold text-gray-800 mb-1">
+       Khách sạn InterContinental Đà Nẵng
+      </h3>
+      <p class="text-gray-600 mb-2">
+       Đà Nẵng
+      </p>
+      <div class="flex items-center mb-2">
+       <div class="text-yellow-400 mr-2">
+        ★★★★½
+       </div>
+       <span class="text-gray-700 font-semibold">
+        4.7
+       </span>
+      </div>
+      <p class="text-indigo-600 font-bold text-lg mt-auto">
+       2.800.000 ₫ / đêm
+      </p>
+     </div>
+    </div>
+    <div aria-label="Xem chi tiết khách sạn Khách sạn Mường Thanh Luxury Sapa" aria-pressed="false" class="bg-white rounded-lg shadow hover:shadow-lg transition cursor-pointer flex flex-col" role="button" tabindex="0">
+     <img alt="Hình ảnh mặt tiền khách sạn Khách sạn Mường Thanh Luxury Sapa tại Sapa vào ban ngày" class="rounded-t-lg object-cover w-full h-48" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/ab7715f5-afe7-4b47-9b16-96ad6a7059f7.jpg" width="600"/>
+     <div class="p-4 flex flex-col flex-grow">
+      <h3 class="text-xl font-semibold text-gray-800 mb-1">
+       Khách sạn Mường Thanh Luxury Sapa
+      </h3>
+      <p class="text-gray-600 mb-2">
+       Sapa
+      </p>
+      <div class="flex items-center mb-2">
+       <div class="text-yellow-400 mr-2">
+        ★★★★
+       </div>
+       <span class="text-gray-700 font-semibold">
+        4.5
+       </span>
+      </div>
+      <p class="text-indigo-600 font-bold text-lg mt-auto">
+       1.500.000 ₫ / đêm
+      </p>
+     </div>
+    </div>
+    <div aria-label="Xem chi tiết khách sạn Khách sạn Rex Sài Gòn" aria-pressed="false" class="bg-white rounded-lg shadow hover:shadow-lg transition cursor-pointer flex flex-col" role="button" tabindex="0">
+     <img alt="Hình ảnh mặt tiền khách sạn Khách sạn Rex Sài Gòn tại Hồ Chí Minh vào ban ngày" class="rounded-t-lg object-cover w-full h-48" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/fefdabb2-a69b-458b-f99d-4684d48b941a.jpg" width="600"/>
+     <div class="p-4 flex flex-col flex-grow">
+      <h3 class="text-xl font-semibold text-gray-800 mb-1">
+       Khách sạn Rex Sài Gòn
+      </h3>
+      <p class="text-gray-600 mb-2">
+       Hồ Chí Minh
+      </p>
+      <div class="flex items-center mb-2">
+       <div class="text-yellow-400 mr-2">
+        ★★★★
+       </div>
+       <span class="text-gray-700 font-semibold">
+        4.4
+       </span>
+      </div>
+      <p class="text-indigo-600 font-bold text-lg mt-auto">
+       2.000.000 ₫ / đêm
+      </p>
+     </div>
+    </div>
+    <div aria-label="Xem chi tiết khách sạn Khách sạn Vinpearl Luxury Nha Trang" aria-pressed="false" class="bg-white rounded-lg shadow hover:shadow-lg transition cursor-pointer flex flex-col" role="button" tabindex="0">
+     <img alt="Hình ảnh mặt tiền khách sạn Khách sạn Vinpearl Luxury Nha Trang tại Nha Trang vào ban ngày" class="rounded-t-lg object-cover w-full h-48" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/162fb17b-4ff5-4e6c-e6af-cbe1db73a9fe.jpg" width="600"/>
+     <div class="p-4 flex flex-col flex-grow">
+      <h3 class="text-xl font-semibold text-gray-800 mb-1">
+       Khách sạn Vinpearl Luxury Nha Trang
+      </h3>
+      <p class="text-gray-600 mb-2">
+       Nha Trang
+      </p>
+      <div class="flex items-center mb-2">
+       <div class="text-yellow-400 mr-2">
+        ★★★★★
+       </div>
+       <span class="text-gray-700 font-semibold">
+        4.9
+       </span>
+      </div>
+      <p class="text-indigo-600 font-bold text-lg mt-auto">
+       4.000.000 ₫ / đêm
+      </p>
+     </div>
+    </div>
+    <div aria-label="Xem chi tiết khách sạn Khách sạn Melia Hà Nội" aria-pressed="false" class="bg-white rounded-lg shadow hover:shadow-lg transition cursor-pointer flex flex-col" role="button" tabindex="0">
+     <img alt="Hình ảnh mặt tiền khách sạn Khách sạn Melia Hà Nội tại Hà Nội vào ban ngày" class="rounded-t-lg object-cover w-full h-48" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/6931d94a-0682-46dd-eb4f-e50352dfa7d5.jpg" width="600"/>
+     <div class="p-4 flex flex-col flex-grow">
+      <h3 class="text-xl font-semibold text-gray-800 mb-1">
+       Khách sạn Melia Hà Nội
+      </h3>
+      <p class="text-gray-600 mb-2">
+       Hà Nội
+      </p>
+      <div class="flex items-center mb-2">
+       <div class="text-yellow-400 mr-2">
+        ★★★★½
+       </div>
+       <span class="text-gray-700 font-semibold">
+        4.6
+       </span>
+      </div>
+      <p class="text-indigo-600 font-bold text-lg mt-auto">
+       3.200.000 ₫ / đêm
+      </p>
+     </div>
+    </div>
+    <div aria-label="Xem chi tiết khách sạn Khách sạn Novotel Đà Lạt" aria-pressed="false" class="bg-white rounded-lg shadow hover:shadow-lg transition cursor-pointer flex flex-col" role="button" tabindex="0">
+     <img alt="Hình ảnh mặt tiền khách sạn Khách sạn Novotel Đà Lạt tại Đà Lạt vào ban ngày" class="rounded-t-lg object-cover w-full h-48" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/9caa12e3-a785-4f36-293d-58f38b6fca22.jpg" width="600"/>
+     <div class="p-4 flex flex-col flex-grow">
+      <h3 class="text-xl font-semibold text-gray-800 mb-1">
+       Khách sạn Novotel Đà Lạt
+      </h3>
+      <p class="text-gray-600 mb-2">
+       Đà Lạt
+      </p>
+      <div class="flex items-center mb-2">
+       <div class="text-yellow-400 mr-2">
+        ★★★★
+       </div>
+       <span class="text-gray-700 font-semibold">
+        4.3
+       </span>
+      </div>
+      <p class="text-indigo-600 font-bold text-lg mt-auto">
+       1.800.000 ₫ / đêm
+      </p>
+     </div>
+    </div>
+    <div aria-label="Xem chi tiết khách sạn Khách sạn Pullman Vũng Tàu" aria-pressed="false" class="bg-white rounded-lg shadow hover:shadow-lg transition cursor-pointer flex flex-col" role="button" tabindex="0">
+     <img alt="Hình ảnh mặt tiền khách sạn Khách sạn Pullman Vũng Tàu tại Vũng Tàu vào ban ngày" class="rounded-t-lg object-cover w-full h-48" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/c31fdd08-167c-43ad-725e-2797a015ef98.jpg" width="600"/>
+     <div class="p-4 flex flex-col flex-grow">
+      <h3 class="text-xl font-semibold text-gray-800 mb-1">
+       Khách sạn Pullman Vũng Tàu
+      </h3>
+      <p class="text-gray-600 mb-2">
+       Vũng Tàu
+      </p>
+      <div class="flex items-center mb-2">
+       <div class="text-yellow-400 mr-2">
+        ★★★★½
+       </div>
+       <span class="text-gray-700 font-semibold">
+        4.5
+       </span>
+      </div>
+      <p class="text-indigo-600 font-bold text-lg mt-auto">
+       2.300.000 ₫ / đêm
+      </p>
+     </div>
+    </div>
+    <div aria-label="Xem chi tiết khách sạn Khách sạn Saigon Prince Hồ Chí Minh" aria-pressed="false" class="bg-white rounded-lg shadow hover:shadow-lg transition cursor-pointer flex flex-col" role="button" tabindex="0">
+     <img alt="Hình ảnh mặt tiền khách sạn Khách sạn Saigon Prince Hồ Chí Minh tại Hồ Chí Minh vào ban ngày" class="rounded-t-lg object-cover w-full h-48" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/36c28ff5-f8ec-4e5a-c85e-deb7374ee3f6.jpg" width="600"/>
+     <div class="p-4 flex flex-col flex-grow">
+      <h3 class="text-xl font-semibold text-gray-800 mb-1">
+       Khách sạn Saigon Prince Hồ Chí Minh
+      </h3>
+      <p class="text-gray-600 mb-2">
+       Hồ Chí Minh
+      </p>
+      <div class="flex items-center mb-2">
+       <div class="text-yellow-400 mr-2">
+        ★★★★
+       </div>
+       <span class="text-gray-700 font-semibold">
+        4.2
+       </span>
+      </div>
+      <p class="text-indigo-600 font-bold text-lg mt-auto">
+       1.700.000 ₫ / đêm
+      </p>
+     </div>
+    </div>
+    <div aria-label="Xem chi tiết khách sạn Khách sạn Liberty Central Hội An" aria-pressed="false" class="bg-white rounded-lg shadow hover:shadow-lg transition cursor-pointer flex flex-col" role="button" tabindex="0">
+     <img alt="Hình ảnh mặt tiền khách sạn Khách sạn Liberty Central Hội An tại Hội An vào ban ngày" class="rounded-t-lg object-cover w-full h-48" height="400" loading="lazy" src="ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Anantara Hội An/anhngoai.png" width="600"/>
+     <div class="p-4 flex flex-col flex-grow">
+      <h3 class="text-xl font-semibold text-gray-800 mb-1">
+       Khách sạn Liberty Central Hội An
+      </h3>
+      <p class="text-gray-600 mb-2">
+       Hội An
+      </p>
+      <div class="flex items-center mb-2">
+       <div class="text-yellow-400 mr-2">
+        ★★★★½
+       </div>
+       <span class="text-gray-700 font-semibold">
+        4.6
+       </span>
+      </div>
+      <p class="text-indigo-600 font-bold text-lg mt-auto">
+       2.100.000 ₫ / đêm
+      </p>
+     </div>
+    </div>
+    <div aria-label="Xem chi tiết khách sạn Khách sạn Eden Đà Lạt" aria-pressed="false" class="bg-white rounded-lg shadow hover:shadow-lg transition cursor-pointer flex flex-col" role="button" tabindex="0">
+     <img alt="Hình ảnh mặt tiền khách sạn Khách sạn Eden Đà Lạt tại Đà Lạt vào ban ngày" class="rounded-t-lg object-cover w-full h-48" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/0ead6e18-b3e1-44c7-4bdb-d811923fcb17.jpg" width="600"/>
+     <div class="p-4 flex flex-col flex-grow">
+      <h3 class="text-xl font-semibold text-gray-800 mb-1">
+       Khách sạn Eden Đà Lạt
+      </h3>
+      <p class="text-gray-600 mb-2">
+       Đà Lạt
+      </p>
+      <div class="flex items-center mb-2">
+       <div class="text-yellow-400 mr-2">
+        ★★★★
+       </div>
+       <span class="text-gray-700 font-semibold">
+        4.4
+       </span>
+      </div>
+      <p class="text-indigo-600 font-bold text-lg mt-auto">
+       1.600.000 ₫ / đêm
+      </p>
+     </div>
+    </div>
+    <div aria-label="Xem chi tiết khách sạn Khách sạn Grand Plaza Hà Nội" aria-pressed="false" class="bg-white rounded-lg shadow hover:shadow-lg transition cursor-pointer flex flex-col" role="button" tabindex="0">
+     <img alt="Hình ảnh mặt tiền khách sạn Khách sạn Grand Plaza Hà Nội tại Hà Nội vào ban ngày" class="rounded-t-lg object-cover w-full h-48" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/9d764e03-dbaf-4f05-52e5-79fe961419dc.jpg" width="600"/>
+     <div class="p-4 flex flex-col flex-grow">
+      <h3 class="text-xl font-semibold text-gray-800 mb-1">
+       Khách sạn Grand Plaza Hà Nội
+      </h3>
+      <p class="text-gray-600 mb-2">
+       Hà Nội
+      </p>
+      <div class="flex items-center mb-2">
+       <div class="text-yellow-400 mr-2">
+        ★★★★
+       </div>
+       <span class="text-gray-700 font-semibold">
+        4.3
+       </span>
+      </div>
+      <p class="text-indigo-600 font-bold text-lg mt-auto">
+       1.900.000 ₫ / đêm
+      </p>
+     </div>
+    </div>
+    <div aria-label="Xem chi tiết khách sạn Khách sạn Anantara Hội An" aria-pressed="false" class="bg-white rounded-lg shadow hover:shadow-lg transition cursor-pointer flex flex-col" role="button" tabindex="0">
+     <img alt="Hình ảnh mặt tiền khách sạn Khách sạn Anantara Hội An tại Hội An vào ban ngày" class="rounded-t-lg object-cover w-full h-48" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/7684d30f-23aa-4c29-715a-d711dc64865b.jpg" width="600"/>
+     <div class="p-4 flex flex-col flex-grow">
+      <h3 class="text-xl font-semibold text-gray-800 mb-1">
+       Khách sạn Anantara Hội An
+      </h3>
+      <p class="text-gray-600 mb-2">
+       Hội An
+      </p>
+      <div class="flex items-center mb-2">
+       <div class="text-yellow-400 mr-2">
+        ★★★★½
+       </div>
+       <span class="text-gray-700 font-semibold">
+        4.7
+       </span>
+      </div>
+      <p class="text-indigo-600 font-bold text-lg mt-auto">
+       3.700.000 ₫ / đêm
+      </p>
+     </div>
+    </div>
+    <div aria-label="Xem chi tiết khách sạn Khách sạn Sheraton Nha Trang" aria-pressed="false" class="bg-white rounded-lg shadow hover:shadow-lg transition cursor-pointer flex flex-col" role="button" tabindex="0">
+     <img alt="Hình ảnh mặt tiền khách sạn Khách sạn Sheraton Nha Trang tại Nha Trang vào ban ngày" class="rounded-t-lg object-cover w-full h-48" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/c146e3a2-641f-4edc-45d5-7c44b4fd8c1a.jpg" width="600"/>
+     <div class="p-4 flex flex-col flex-grow">
+      <h3 class="text-xl font-semibold text-gray-800 mb-1">
+       Khách sạn Sheraton Nha Trang
+      </h3>
+      <p class="text-gray-600 mb-2">
+       Nha Trang
+      </p>
+      <div class="flex items-center mb-2">
+       <div class="text-yellow-400 mr-2">
+        ★★★★½
+       </div>
+       <span class="text-gray-700 font-semibold">
+        4.5
+       </span>
+      </div>
+      <p class="text-indigo-600 font-bold text-lg mt-auto">
+       3.400.000 ₫ / đêm
+      </p>
+     </div>
+    </div>
+    <div aria-label="Xem chi tiết khách sạn Khách sạn Liberty Central Saigon Riverside" aria-pressed="false" class="bg-white rounded-lg shadow hover:shadow-lg transition cursor-pointer flex flex-col" role="button" tabindex="0">
+     <img alt="	C:\Users\xoan\Pictures\Camera Roll\ce1ca889-8509-4984-908d-bf0a5fba7311.jpg" class="rounded-t-lg object-cover w-full h-48" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/468dd703-cadf-4eee-1579-c0702aed8964.jpg" width="600"/>
+     <div class="p-4 flex flex-col flex-grow">
+      <h3 class="text-xl font-semibold text-gray-800 mb-1">
+       Khách sạn Liberty Central Saigon Riverside
+      </h3>
+      <p class="text-gray-600 mb-2">
+       Hồ Chí Minh
+      </p>
+      <div class="flex items-center mb-2">
+       <div class="text-yellow-400 mr-2">
+        ★★★★
+       </div>
+       <span class="text-gray-700 font-semibold">
+        4.4
+       </span>
+      </div>
+      <p class="text-indigo-600 font-bold text-lg mt-auto">
+       2.200.000 ₫ / đêm
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Hotel Detail Modal -->
+  <div aria-labelledby="hotel-detail-title" aria-modal="true" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center p-4 z-50 hidden" id="hotel-detail-modal" role="dialog">
+   <div class="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-lg relative">
+    <button aria-label="Đóng" class="absolute top-4 right-4 text-gray-600 hover:text-gray-900 focus:outline-none" id="modal-close-button">
+     <i class="fas fa-times fa-lg">
+     </i>
+    </button>
+    <div class="p-6" id="hotel-detail-content">
+     <!-- Hotel detail content inserted by JS -->
+    </div>
+   </div>
+  </div>
+  <!-- Payment Modal -->
+  <div aria-labelledby="payment-title" aria-modal="true" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center p-4 z-50 hidden" id="payment-modal" role="dialog">
+   <div class="bg-white rounded-lg max-w-md w-full max-h-[90vh] overflow-y-auto shadow-lg relative">
+    <button aria-label="Đóng" class="absolute top-4 right-4 text-gray-600 hover:text-gray-900 focus:outline-none" id="payment-close-button">
+     <i class="fas fa-times fa-lg">
+     </i>
+    </button>
+    <div class="p-6">
+     <h3 class="text-2xl font-bold mb-4 text-gray-800" id="payment-title">
+      Thanh toán đặt phòng
+     </h3>
+     <form class="space-y-4" id="payment-form">
+      <div>
+       <label class="block text-gray-700 font-semibold mb-1" for="card-name">
+        Tên trên thẻ
+       </label>
+       <input class="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400" id="card-name" name="cardName" placeholder="Nguyễn Văn A" required="" type="text"/>
+      </div>
+      <div>
+       <label class="block text-gray-700 font-semibold mb-1" for="card-number">
+        Số thẻ
+       </label>
+       <input class="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400" id="card-number" inputmode="numeric" maxlength="19" name="cardNumber" pattern="\d{13,19}" placeholder="1234 5678 9012 3456" required="" type="text"/>
+      </div>
+      <div class="flex gap-4">
+       <div class="flex-1">
+        <label class="block text-gray-700 font-semibold mb-1" for="expiry-date">
+         Ngày hết hạn
+        </label>
+        <input class="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400" id="expiry-date" min="" name="expiryDate" required="" type="month"/>
+       </div>
+       <div class="flex-1">
+        <label class="block text-gray-700 font-semibold mb-1" for="cvv">
+         CVV
+        </label>
+        <input class="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400" id="cvv" inputmode="numeric" maxlength="4" name="cvv" pattern="\d{3,4}" placeholder="123" required="" type="text"/>
+       </div>
+      </div>
+      <button class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-md py-3 transition" type="submit">
+       Thanh toán
+      </button>
+     </form>
+    </div>
+   </div>
+  </div>
+  <!-- About Section -->
+  <section class="bg-white py-12 px-4" id="about">
+   <div class="container mx-auto max-w-4xl text-center">
+    <h2 class="text-3xl font-bold text-gray-800 mb-4">
+     Về VIVUVIETNAM
+    </h2>
+    <p class="text-gray-700 text-lg leading-relaxed mb-6">
+     VIVUVIETNAM là nền tảng đặt phòng khách sạn hàng đầu tại Việt Nam, giúp bạn dễ dàng tìm kiếm và đặt phòng khách sạn với giá tốt nhất. Chúng tôi cam kết mang đến trải nghiệm đặt phòng nhanh chóng, an toàn và tiện lợi.
+    </p>
+    <p class="text-gray-600 text-sm italic">
+     Địa chỉ công ty: Yên Nghĩa, Hà Đông, Hà Nội, Việt Nam
+    </p>
+   </div>
+  </section>
+  <!-- Contact Section -->
+  <section class="bg-indigo-50 py-12 px-4" id="contact">
+   <div class="container mx-auto max-w-4xl">
+    <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">
+     Liên hệ với chúng tôi
+    </h2>
+    <form class="max-w-xl mx-auto space-y-6 bg-white p-8 rounded-lg shadow" id="contact-form">
+     <div>
+      <label class="block text-gray-700 font-semibold mb-1" for="contact-name">
+       Họ và tên
+      </label>
+      <input class="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400" id="contact-name" name="contactName" placeholder="Nguyễn Văn A" required="" type="text"/>
+     </div>
+     <div>
+      <label class="block text-gray-700 font-semibold mb-1" for="contact-email">
+       Email
+      </label>
+      <input class="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400" id="contact-email" name="contactEmail" placeholder="email@example.com" required="" type="email"/>
+     </div>
+     <div>
+      <label class="block text-gray-700 font-semibold mb-1" for="contact-message">
+       Nội dung
+      </label>
+      <textarea class="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400" id="contact-message" name="contactMessage" placeholder="Nhập nội dung liên hệ..." required="" rows="4"></textarea>
+     </div>
+     <button class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-md py-3 transition" type="submit">
+      Gửi
+     </button>
+    </form>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-300 py-8 mt-auto">
+   <div class="container mx-auto px-4 max-w-7xl flex flex-col md:flex-row justify-between items-center">
+    <p class="text-sm">
+     © 2024 VIVUVIETNAM. Bản quyền thuộc về VIVUVIETNAM.
+    </p>
+    <div class="flex space-x-6 mt-4 md:mt-0">
+     <a aria-label="Facebook" class="hover:text-white" href="#">
+      <i class="fab fa-facebook fa-lg">
+      </i>
+     </a>
+     <a aria-label="Twitter" class="hover:text-white" href="#">
+      <i class="fab fa-twitter fa-lg">
+      </i>
+     </a>
+     <a aria-label="Instagram" class="hover:text-white" href="#">
+      <i class="fab fa-instagram fa-lg">
+      </i>
+     </a>
+     <a aria-label="LinkedIn" class="hover:text-white" href="#">
+      <i class="fab fa-linkedin fa-lg">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script>
+   // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Set min dates for date inputs
+    const today = new Date().toISOString().split('T')[0];
+    const checkinInput = document.getElementById('checkin-date');
+    const checkoutInput = document.getElementById('checkout-date');
+    checkinInput.min = today;
+    checkoutInput.min = today;
+
+    checkinInput.addEventListener('change', () => {
+      if (checkinInput.value) {
+        const nextDay = new Date(checkinInput.value);
+        nextDay.setDate(nextDay.getDate() + 1);
+        checkoutInput.min = nextDay.toISOString().split('T')[0];
+        if (checkoutInput.value <= checkinInput.value) {
+          checkoutInput.value = '';
+        }
+      }
+    });
+
+    // Set min for expiry date (month input)
+    const expiryInput = document.getElementById('expiry-date');
+    const now = new Date();
+    const month = now.getMonth() + 1;
+    const year = now.getFullYear();
+    expiryInput.min = `${year}-${month.toString().padStart(2, '0')}`;
+
+    // Hotel data
+    const hotels = [
+      {
+        id: 1,
+        name: "Khách sạn Sofitel Legend Metropole Hà Nội",
+        location: "Hà Nội",
+        rating: 4.8,
+        price: 3500000,
+        description: "Khách sạn 5 sao sang trọng nằm ở trung tâm Hà Nội, gần các điểm tham quan nổi tiếng.",
+        images: [
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Sofitel Legend Metropole Hà nội/{1BFDCA45-7E73-4354-B3B7-E161F7FA7EE3}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Sofitel Legend Metropole Hà nội/{5B813BD2-82E5-4C07-8FD8-C2D1D15DAFAA}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Sofitel Legend Metropole Hà nội/{08DC7CBD-0DD5-495A-987A-8398F2F142A0}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Sofitel Legend Metropole Hà nội/{8FAE6BE3-6274-43DA-98A6-1EE1F9EA66BA}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Sofitel Legend Metropole Hà nội/{B86B1C32-C3A9-4222-AAC4-003326B523B0}.png"
+        ],
+        amenities: ["Wifi miễn phí", "Hồ bơi", "Spa", "Nhà hàng", "Phòng gym"],
+        rooms: [
+          { type: "Phòng Deluxe", price: 3500000, available: 5 },
+          { type: "Phòng Suite", price: 5500000, available: 2 },
+        ],
+      },
+      {
+        id: 2,
+        name: "Khách sạn InterContinental Đà Nẵng",
+        location: "Đà Nẵng",
+        rating: 4.7,
+        price: 2800000,
+        description: "Khách sạn 5 sao bên bờ biển Mỹ Khê, Đà Nẵng với tiện nghi hiện đại và dịch vụ cao cấp.",
+        images: [
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/ksan intercontinental Đà Nẵng/{26422A6F-49AE-460F-BEB6-1237082C844C}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/ksan intercontinental Đà Nẵng/{AF9EB546-DD09-4111-97E1-44C569B3075A}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/ksan intercontinental Đà Nẵng/{B29F860B-4A40-4771-9D91-A45754FFEB75}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/ksan intercontinental Đà Nẵng/{CC1F6BEB-AB7F-435B-BA07-DC6108E49C6D}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/ksan intercontinental Đà Nẵng/tải xuống (1).jpg"
+        ],
+        amenities: ["Wifi miễn phí", "Hồ bơi ngoài trời", "Nhà hàng", "Phòng họp", "Spa"],
+        rooms: [
+          { type: "Phòng Superior", price: 2800000, available: 8 },
+          { type: "Phòng Executive", price: 4200000, available: 3 },
+        ],
+      },
+      {
+        id: 3,
+        name: "Khách sạn Mường Thanh Luxury Sapa",
+        location: "Sapa",
+        rating: 4.5,
+        price: 1500000,
+        description: "Khách sạn sang trọng với view núi tuyệt đẹp, gần trung tâm thị trấn Sapa.",
+        images: [
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Mường Thanh Luxury Sapa/{4B165C4A-BBB5-46F8-BFD6-44768A714107}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Mường Thanh Luxury Sapa/{41A878A4-95EB-48CB-84E5-F9CB4E354299}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Mường Thanh Luxury Sapa/{6553E22B-8BE2-49E1-96C4-07680803D92D}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Mường Thanh Luxury Sapa/{C4BF3421-101A-4C48-9D70-4D11C74CEB1B}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Mường Thanh Luxury Sapa/{DA296B37-0135-49E5-9CAE-6ACEB65E6AC3}.png"
+        ],
+        amenities: ["Wifi miễn phí", "Nhà hàng", "Phòng họp", "Dịch vụ đưa đón"],
+        rooms: [
+          { type: "Phòng Standard", price: 1500000, available: 10 },
+          { type: "Phòng Deluxe", price: 2200000, available: 4 },
+        ],
+      },
+      {
+        id: 4,
+        name: "Khách sạn Rex Sài Gòn",
+        location: "Hồ Chí Minh",
+        rating: 4.4,
+        price: 2000000,
+        description: "Khách sạn lịch sử nằm ở trung tâm Quận 1, TP. Hồ Chí Minh với dịch vụ chuyên nghiệp.",
+        images: [
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Khách sạn Rex Sài Gòn/{4E7F06BE-8084-4537-9AE6-9F9657AA271C}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Khách sạn Rex Sài Gòn/{6D61647B-D3C3-4D7A-A8C9-9AED473D25E1}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Khách sạn Rex Sài Gòn/{166D5C04-DCA6-4FFD-9E71-8106ABD8D1E4}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Khách sạn Rex Sài Gòn/{A90C0A55-F849-436A-8E8E-8C37B34064E7}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Khách sạn Rex Sài Gòn/{C36C495E-9F46-41C7-A083-7005E5996BDF}.png"
+        ],
+        amenities: ["Wifi miễn phí", "Hồ bơi", "Nhà hàng", "Bar", "Phòng hội nghị"],
+        rooms: [
+          { type: "Phòng Superior", price: 2000000, available: 6 },
+          { type: "Phòng Suite", price: 3500000, available: 2 },
+        ],
+      },
+      {
+        id: 5,
+        name: "Khách sạn Vinpearl Luxury Nha Trang",
+        location: "Nha Trang",
+        rating: 4.9,
+        price: 4000000,
+        description: "Khách sạn 5 sao cao cấp bên bờ biển Nha Trang với tiện nghi sang trọng và dịch vụ đẳng cấp.",
+        images: [
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Vinpearl Luxury Nha Trang/{4B97AEE3-938E-44EC-901F-DA4D98638DCB}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Vinpearl Luxury Nha Trang/{45E84CAA-5FA0-4DA5-ADAA-2B3101F112EB}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Vinpearl Luxury Nha Trang/{0648BC74-430E-44AF-AB3D-8C8537B4A8B4}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Vinpearl Luxury Nha Trang/{574832F7-CC5D-4A22-B43B-F870CF03B933}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Vinpearl Luxury Nha Trang/{D689C4DD-E794-4ED8-8BF3-C243F412699B}.png"
+        ],
+        amenities: ["Wifi miễn phí", "Hồ bơi vô cực", "Spa", "Nhà hàng", "Phòng gym"],
+        rooms: [
+          { type: "Phòng Deluxe", price: 4000000, available: 4 },
+          { type: "Phòng Suite", price: 6500000, available: 1 },
+        ],
+      },
+      {
+        id: 6,
+        name: "Khách sạn Melia Hà Nội",
+        location: "Hà Nội",
+        rating: 4.6,
+        price: 3200000,
+        description: "Khách sạn 5 sao hiện đại nằm gần Hồ Hoàn Kiếm, Hà Nội với dịch vụ chuyên nghiệp.",
+        images: [
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Melia Hà Nội/tải xuống (1).jpg",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Melia Hà Nội/images (1).jpg",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Melia Hà Nội/images.jpg",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Melia Hà Nội/tải xuống (3).jpg",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Melia Hà Nội/tải xuống.jpg"
+        ],
+        amenities: ["Wifi miễn phí", "Hồ bơi", "Nhà hàng", "Spa", "Phòng gym"],
+        rooms: [
+          { type: "Phòng Superior", price: 3200000, available: 7 },
+          { type: "Phòng Executive", price: 4800000, available: 3 },
+        ],
+      },
+      {
+        id: 7,
+        name: "Khách sạn Novotel Đà Lạt",
+        location: "Đà Lạt",
+        rating: 4.3,
+        price: 1800000,
+        description: "Khách sạn 4 sao nằm ở trung tâm thành phố Đà Lạt, gần các điểm tham quan nổi tiếng.",
+        images: [
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Novotel Đà Lạt/{0B608392-BCDF-45E7-AABF-F24D57CD7234}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Novotel Đà Lạt/{6AC9CEF0-9A93-408F-AF7D-4B6D850BAFF0}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Novotel Đà Lạt/{2073F9C2-C8C5-4C5B-B31E-D2FF64602D05}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Novotel Đà Lạt/{8543D961-863E-4272-ADA6-8F14B908A796}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Novotel Đà Lạt/{A885F17E-071B-473D-BAA5-078EFBBF63BC}.png"
+        ],
+        amenities: ["Wifi miễn phí", "Nhà hàng", "Phòng họp", "Bar"],
+        rooms: [
+          { type: "Phòng Standard", price: 1800000, available: 9 },
+          { type: "Phòng Deluxe", price: 2500000, available: 5 },
+        ],
+      },
+      {
+        id: 8,
+        name: "Khách sạn Pullman Vũng Tàu",
+        location: "Vũng Tàu",
+        rating: 4.5,
+        price: 2300000,
+        description: "Khách sạn 5 sao bên bờ biển Vũng Tàu với tiện nghi hiện đại và dịch vụ cao cấp.",
+        images: [
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Pullman Vũng Tàu/{2C9F4C19-B3A9-40C5-B563-EF1EB33F03A4}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Pullman Vũng Tàu/{8BC3F62D-12C8-45E7-BE7D-756C05523A2D}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Pullman Vũng Tàu/{0797E2BB-E2FC-489E-8C3C-BFC30FAD3278}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Pullman Vũng Tàu/{969C34A0-C86F-4B71-8EDB-0BC6E97AC86F}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Pullman Vũng Tàu/{35426D10-570A-4CBE-AC64-C20204A9A517}.png"
+      ],
+        amenities: ["Wifi miễn phí", "Hồ bơi", "Nhà hàng", "Spa", "Phòng gym"],
+        rooms: [
+          { type: "Phòng Superior", price: 2300000, available: 6 },
+          { type: "Phòng Suite", price: 3800000, available: 2 },
+        ],
+      },
+      {
+        id: 9,
+        name: "Khách sạn Saigon Prince Hồ Chí Minh",
+        location: "Hồ Chí Minh",
+        rating: 4.2,
+        price: 1700000,
+        description: "Khách sạn 4 sao hiện đại nằm ở Quận 1, TP. Hồ Chí Minh với dịch vụ chuyên nghiệp.",
+        images: [
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Saigon prince Hồ Chí Minh/{0E993F11-BF72-4955-91AA-58081AC70CF7}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Saigon prince Hồ Chí Minh/{28E3A40D-8C86-4300-89AB-4E118176DDCA}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Saigon prince Hồ Chí Minh/{46D68EE4-9076-4CE8-B465-4DE2DA5E3D99}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Saigon prince Hồ Chí Minh/{93D71B1F-6B84-48A0-804C-0058F31A7542}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Saigon prince Hồ Chí Minh/{66649930-428A-498D-A78E-95720EA47E7F}.png"
+        ],
+        amenities: ["Wifi miễn phí", "Nhà hàng", "Phòng họp", "Bar"],
+        rooms: [
+          { type: "Phòng Standard", price: 1700000, available: 10 },
+          { type: "Phòng Deluxe", price: 2400000, available: 4 },
+        ],
+      },
+      {
+        id: 10,
+        name: "Khách sạn Liberty Central Hội An",
+        location: "Hội An",
+        rating: 4.6,
+        price: 2100000,
+        description: "Khách sạn 4 sao nằm gần phố cổ Hội An, tiện nghi hiện đại và dịch vụ thân thiện.",
+        images: [
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Libery Central Hội An/{6D5BEC63-E9C4-4AF9-A8C1-6C7B90133B5D}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Libery Central Hội An/{9113F878-AB55-4BA4-B7D7-E33E3419CEE1}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Libery Central Hội An/{B0609ACE-A5AD-464E-A8E4-49E5841A1095}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Libery Central Hội An/{CEA42EB5-D19B-45BA-8637-EF61D6EAD19B}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Libery Central Hội An/{E6087730-3F3C-4383-9E05-F5D50F0C3BB3}.png"
+        ],
+        amenities: ["Wifi miễn phí", "Hồ bơi", "Nhà hàng", "Bar"],
+        rooms: [
+          { type: "Phòng Superior", price: 2100000, available: 7 },
+          { type: "Phòng Suite", price: 3600000, available: 3 },
+        ],
+      },
+      {
+        id: 11,
+        name: "Khách sạn Eden Đà Lạt",
+        location: "Đà Lạt",
+        rating: 4.4,
+        price: 1600000,
+        description: "Khách sạn 3 sao với không gian ấm cúng, gần trung tâm thành phố Đà Lạt.",
+        images: [
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Eden Đà Lạt/ảnh ngoài.jpg",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Eden Đà Lạt/72cc42c61374f8ceaac22a74395385c1.jpg",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Eden Đà Lạt/images (1).jpg",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Eden Đà Lạt/images (2).jpg",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Eden Đà Lạt/images (3).jpg"
+        ],
+        amenities: ["Wifi miễn phí", "Nhà hàng", "Bar"],
+        rooms: [
+          { type: "Phòng Standard", price: 1600000, available: 12 },
+          { type: "Phòng Deluxe", price: 2100000, available: 6 },
+        ],
+      },
+      {
+        id: 12,
+        name: "Khách sạn Grand Plaza Hà Nội",
+        location: "Hà Nội",
+        rating: 4.3,
+        price: 1900000,
+        description: "Khách sạn 4 sao hiện đại nằm gần trung tâm Hà Nội, tiện nghi đầy đủ.",
+        images: [
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Grand Plaza Hà Nội/{631FDADC-4389-4922-9F76-6AE976FDADF0}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Grand Plaza Hà Nội/{8262A30E-104D-4E1E-8424-90F7194B507F}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Grand Plaza Hà Nội/{91643E78-3EC0-49D0-AF21-1E35A8314252}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Grand Plaza Hà Nội/{CD15F5CF-5E99-4365-81BD-09F13EE2D92A}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Grand Plaza Hà Nội/{D1874086-D334-4FD3-BC42-B5EE1B1BD571}.png"
+        ],
+        amenities: ["Wifi miễn phí", "Hồ bơi", "Nhà hàng", "Phòng gym"],
+        rooms: [
+          { type: "Phòng Superior", price: 1900000, available: 8 },
+          { type: "Phòng Executive", price: 2800000, available: 3 },
+        ],
+      },
+      {
+        id: 13,
+        name: "Khách sạn Anantara Hội An",
+        location: "Hội An",
+        rating: 4.7,
+        price: 3700000,
+        description: "Khách sạn 5 sao sang trọng bên bờ sông Thu Bồn, Hội An với dịch vụ đẳng cấp.",
+        images: [
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Anantara Hội An/{01FF029E-A785-4370-AC7C-53E22DE29DBA}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Anantara Hội An/{2AE4CEE3-08B6-4ECE-B315-6691976D6E31}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Anantara Hội An/{57A79CBB-49A7-4B5D-90F0-F735D0A5CBE6}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Anantara Hội An/{761DEE6C-CDCE-4A6E-97CC-9FEB02689892}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Anantara Hội An/{BFAAC8D2-B1EE-41EE-8826-F3311C648EA4}.png"
+        ],
+        amenities: ["Wifi miễn phí", "Hồ bơi", "Spa", "Nhà hàng", "Phòng gym"],
+        rooms: [
+          { type: "Phòng Deluxe", price: 3700000, available: 5 },
+          { type: "Phòng Suite", price: 6000000, available: 2 },
+        ],
+      },
+      {
+        id: 14,
+        name: "Khách sạn Sheraton Nha Trang",
+        location: "Nha Trang",
+        rating: 4.5,
+        price: 3400000,
+        description: "Khách sạn 5 sao hiện đại bên bờ biển Nha Trang với tiện nghi sang trọng.",
+        images: [
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Sheraton Nha Trang/{11E3C5AC-92D5-4129-8083-B4F705331949}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Sheraton Nha Trang/{1068CAD0-A48A-4BDA-923C-E72956838579}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Sheraton Nha Trang/{B068FC27-1DDD-460F-A6B6-4458ACB0D5F2}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Sheraton Nha Trang/{DEB30B28-9740-4D29-9D28-BB7870713DF5}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Sheraton Nha Trang/{E1823696-CD1E-422C-90AD-303A8FC935CE}.png"
+        ],
+        amenities: ["Wifi miễn phí", "Hồ bơi vô cực", "Spa", "Nhà hàng", "Phòng gym"],
+        rooms: [
+          { type: "Phòng Superior", price: 3400000, available: 6 },
+          { type: "Phòng Suite", price: 5800000, available: 2 },
+        ],
+      },
+      {
+        id: 15,
+        name: "Khách sạn Liberty Central Saigon Riverside",
+        location: "Hồ Chí Minh",
+        rating: 4.4,
+        price: 2200000,
+        description: "Khách sạn 4 sao hiện đại bên bờ sông Sài Gòn, Quận 1, TP. Hồ Chí Minh.",
+        images: [
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Liberty Central Saigon Riverside/{0FFAA6BD-F28E-44F7-9B77-9FEFF213B783}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Liberty Central Saigon Riverside/{6BB81CED-6321-4C41-A05B-E57984F9B80A}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Liberty Central Saigon Riverside/{397BFB64-2EC3-44FD-85A2-76D3851B42CB}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Liberty Central Saigon Riverside/{A1E76209-96AB-433C-A4E1-3E574DE3B162}.png",
+          "ảnh ksan-20250611T182047Z-1-001/ảnh ksan/Liberty Central Saigon Riverside/{D7CD3821-A7D0-44E3-8265-05DE9B44A2A3}.png"
+        ],
+        amenities: ["Wifi miễn phí", "Hồ bơi", "Nhà hàng", "Bar"],
+        rooms: [
+          { type: "Phòng Superior", price: 2200000, available: 7 },
+          { type: "Phòng Suite", price: 3700000, available: 3 },
+        ],
+      },
+    ];
+
+    // Format currency VND
+    function formatVND(number) {
+      return number.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+    }
+
+    // Render hotel cards
+    const hotelList = document.getElementById('hotel-list');
+    function renderHotels(hotelsToRender) {
+      hotelList.innerHTML = '';
+      hotelsToRender.forEach(hotel => {
+        const card = document.createElement('div');
+        card.className = 'bg-white rounded-lg shadow hover:shadow-lg transition cursor-pointer flex flex-col';
+        card.tabIndex = 0;
+        card.setAttribute('role', 'button');
+        card.setAttribute('aria-pressed', 'false');
+        card.setAttribute('aria-label', `Xem chi tiết khách sạn ${hotel.name}`);
+
+        card.innerHTML = `
+          <img
+            src="${hotel.images[0]}"
+            alt="Hình ảnh mặt tiền khách sạn ${hotel.name} tại ${hotel.location} vào ban ngày"
+            class="rounded-t-lg object-cover w-full h-48"
+            loading="lazy"
+          />
+          <div class="p-4 flex flex-col flex-grow">
+            <h3 class="text-xl font-semibold text-gray-800 mb-1">${hotel.name}</h3>
+            <p class="text-gray-600 mb-2">${hotel.location}</p>
+            <div class="flex items-center mb-2">
+              <div class="text-yellow-400 mr-2">
+                ${'★'.repeat(Math.floor(hotel.rating))}${hotel.rating % 1 >= 0.5 ? '½' : ''}
+              </div>
+              <span class="text-gray-700 font-semibold">${hotel.rating.toFixed(1)}</span>
+            </div>
+            <p class="text-indigo-600 font-bold text-lg mt-auto">${formatVND(hotel.price)} / đêm</p>
+          </div>
+        `;
+
+        card.addEventListener('click', () => openHotelDetail(hotel.id));
+        card.addEventListener('keydown', e => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            openHotelDetail(hotel.id);
+          }
+        });
+
+        hotelList.appendChild(card);
+      });
+    }
+
+    renderHotels(hotels);
+
+    // Hotel detail modal
+    const hotelDetailModal = document.getElementById('hotel-detail-modal');
+    const hotelDetailContent = document.getElementById('hotel-detail-content');
+    const modalCloseButton = document.getElementById('modal-close-button');
+
+    function openHotelDetail(hotelId) {
+      const hotel = hotels.find(h => h.id === hotelId);
+      if (!hotel) return;
+
+      // Build images carousel
+      let imagesHtml = '';
+      hotel.images.forEach((img, idx) => {
+        imagesHtml += `
+          <img
+            src="${img}"
+            alt="Hình ảnh số ${idx + 1} của khách sạn ${hotel.name} tại ${hotel.location}"
+            class="w-full h-64 object-cover rounded-lg"
+            loading="lazy"
+          />
+        `;
+      });
+
+      // Amenities list
+      const amenitiesHtml = hotel.amenities.map(a => `<li class="inline-block bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm mr-2 mb-2">${a}</li>`).join('');
+
+      // Rooms options
+      const roomsHtml = hotel.rooms.map((room, idx) => `
+        <option value="${idx}">
+          ${room.type} - ${formatVND(room.price)} (Còn ${room.available} phòng)
+        </option>
+      `).join('');
+
+      hotelDetailContent.innerHTML = `
+        <h2 id="hotel-detail-title" class="text-3xl font-bold mb-4 text-gray-800">${hotel.name}</h2>
+        <div class="space-y-4">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+            ${imagesHtml}
+          </div>
+          <p class="text-gray-700">${hotel.description}</p>
+          <div>
+            <h3 class="font-semibold text-gray-800 mb-2">Tiện nghi</h3>
+            <ul>${amenitiesHtml}</ul>
+          </div>
+          <form id="booking-form" class="space-y-4">
+            <div>
+              <label for="room-select" class="block font-semibold text-gray-800 mb-1">Chọn loại phòng</label>
+              <select id="room-select" name="roomSelect" required class="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400">
+                <option value="" disabled selected>Chọn phòng</option>
+                ${roomsHtml}
+              </select>
+            </div>
+            <div>
+              <label for="guest-name" class="block font-semibold text-gray-800 mb-1">Họ và tên khách</label>
+              <input type="text" id="guest-name" name="guestName" required placeholder="Nguyễn Văn A" class="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400" />
+            </div>
+            <div>
+              <label for="guest-phone" class="block font-semibold text-gray-800 mb-1">Số điện thoại</label>
+              <input type="tel" id="guest-phone" name="guestPhone" required placeholder="0912345678" pattern="[0-9]{9,11}" class="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400" />
+            </div>
+            <div>
+              <label for="guest-email" class="block font-semibold text-gray-800 mb-1">Email</label>
+              <input type="email" id="guest-email" name="guestEmail" required placeholder="email@example.com" class="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400" />
+            </div>
+            <div>
+              <label for="checkin-detail" class="block font-semibold text-gray-800 mb-1">Ngày nhận phòng</label>
+              <input type="date" id="checkin-detail" name="checkinDetail" required min="${today}" class="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400" />
+            </div>
+            <div>
+              <label for="checkout-detail" class="block font-semibold text-gray-800 mb-1">Ngày trả phòng</label>
+              <input type="date" id="checkout-detail" name="checkoutDetail" required min="${today}" class="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400" />
+            </div>
+            <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-md py-3 transition">
+              Đặt phòng
+            </button>
+          </form>
+        </div>
+      `;
+
+      // Date validation for detail modal
+      const checkinDetailInput = document.getElementById('checkin-detail');
+      const checkoutDetailInput = document.getElementById('checkout-detail');
+      checkinDetailInput.min = today;
+      checkoutDetailInput.min = today;
+
+      checkinDetailInput.addEventListener('change', () => {
+        if (checkinDetailInput.value) {
+          const nextDay = new Date(checkinDetailInput.value);
+          nextDay.setDate(nextDay.getDate() + 1);
+          checkoutDetailInput.min = nextDay.toISOString().split('T')[0];
+          if (checkoutDetailInput.value <= checkinDetailInput.value) {
+            checkoutDetailInput.value = '';
+          }
+        }
+      });
+
+      // Booking form submit
+      const bookingForm = document.getElementById('booking-form');
+      bookingForm.addEventListener('submit', e => {
+        e.preventDefault();
+        const roomIndex = bookingForm.roomSelect.value;
+        if (roomIndex === '') {
+          alert('Vui lòng chọn loại phòng.');
+          return;
+        }
+        const room = hotel.rooms[roomIndex];
+        if (room.available <= 0) {
+          alert('Loại phòng này hiện không còn phòng trống.');
+          return;
+        }
+        // Validate dates
+        const checkinDate = bookingForm.checkinDetail.value;
+        const checkoutDate = bookingForm.checkoutDetail.value;
+        if (new Date(checkinDate) >= new Date(checkoutDate)) {
+          alert('Ngày trả phòng phải lớn hơn ngày nhận phòng.');
+          return;
+        }
+
+        // Save booking info for payment modal
+        currentBooking = {
+          hotel,
+          room,
+          guestName: bookingForm.guestName.value.trim(),
+          guestPhone: bookingForm.guestPhone.value.trim(),
+          guestEmail: bookingForm.guestEmail.value.trim(),
+          checkinDate,
+          checkoutDate,
+        };
+
+        openPaymentModal();
+      });
+
+      hotelDetailModal.classList.remove('hidden');
+      hotelDetailModal.focus();
+    }
+
+    modalCloseButton.addEventListener('click', () => {
+      hotelDetailModal.classList.add('hidden');
+      currentBooking = null;
+    });
+
+    hotelDetailModal.addEventListener('click', e => {
+      if (e.target === hotelDetailModal) {
+        hotelDetailModal.classList.add('hidden');
+        currentBooking = null;
+      }
+    });
+
+    // Payment modal
+    const paymentModal = document.getElementById('payment-modal');
+    const paymentCloseButton = document.getElementById('payment-close-button');
+    const paymentForm = document.getElementById('payment-form');
+
+    let currentBooking = null;
+
+    function openPaymentModal() {
+      if (!currentBooking) return;
+
+      // Reset payment form
+      paymentForm.reset();
+
+      // Set expiry min again
+      const now = new Date();
+      const month = now.getMonth() + 1;
+      const year = now.getFullYear();
+      expiryInput.min = `${year}-${month.toString().padStart(2, '0')}`;
+
+      paymentModal.classList.remove('hidden');
+      paymentModal.focus();
+    }
+
+    paymentCloseButton.addEventListener('click', () => {
+      paymentModal.classList.add('hidden');
+      currentBooking = null;
+    });
+
+    paymentModal.addEventListener('click', e => {
+      if (e.target === paymentModal) {
+        paymentModal.classList.add('hidden');
+        currentBooking = null;
+      }
+    });
+
+    paymentForm.addEventListener('submit', e => {
+      e.preventDefault();
+
+      // Simple validation for card number and cvv pattern is done by HTML pattern attribute
+
+      // Simulate payment processing
+      paymentForm.querySelector('button[type="submit"]').disabled = true;
+      paymentForm.querySelector('button[type="submit"]').textContent = 'Đang xử lý...';
+
+      setTimeout(() => {
+        alert(`Đặt phòng thành công!\n\nKhách sạn: ${currentBooking.hotel.name}\nLoại phòng: ${currentBooking.room.type}\nTên khách: ${currentBooking.guestName}\nNgày nhận phòng: ${currentBooking.checkinDate}\nNgày trả phòng: ${currentBooking.checkoutDate}\nTổng tiền: ${formatVND(currentBooking.room.price)}`);
+
+        // Decrease room availability
+        currentBooking.room.available--;
+
+        // Close modals
+        paymentModal.classList.add('hidden');
+        hotelDetailModal.classList.add('hidden');
+        currentBooking = null;
+
+        // Re-render hotels to update availability if needed
+        renderHotels(hotels);
+
+        paymentForm.querySelector('button[type="submit"]').disabled = false;
+        paymentForm.querySelector('button[type="submit"]').textContent = 'Thanh toán';
+      }, 1500);
+    });
+
+    // Search form functionality
+    const searchForm = document.getElementById('search-form');
+    searchForm.addEventListener('submit', e => {
+      e.preventDefault();
+      const location = searchForm['search-location'].value.trim().toLowerCase();
+      const checkin = searchForm['checkin-date'].value;
+      const checkout = searchForm['checkout-date'].value;
+
+      if (!location || !checkin || !checkout) {
+        alert('Vui lòng nhập đầy đủ thông tin tìm kiếm.');
+        return;
+      }
+      if (new Date(checkin) >= new Date(checkout)) {
+        alert('Ngày trả phòng phải lớn hơn ngày nhận phòng.');
+        return;
+      }
+
+      // Filter hotels by location keyword (in name or location)
+      const filteredHotels = hotels.filter(hotel =>
+        hotel.location.toLowerCase().includes(location) ||
+        hotel.name.toLowerCase().includes(location)
+      );
+
+      if (filteredHotels.length === 0) {
+        hotelList.innerHTML = `<p class="text-center text-gray-600 col-span-full">Không tìm thấy khách sạn phù hợp với từ khóa "${location}".</p>`;
+      } else {
+        renderHotels(filteredHotels);
+      }
+
+      // Scroll to hotels section
+      document.getElementById('hotels').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    // Accessibility: trap focus inside modals when open
+    function trapFocus(element) {
+      const focusableElements = element.querySelectorAll('a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])');
+      const firstFocusable = focusableElements[0];
+      const lastFocusable = focusableElements[focusableElements.length - 1];
+
+      element.addEventListener('keydown', e => {
+        if (e.key === 'Tab') {
+          if (e.shiftKey) {
+            if (document.activeElement === firstFocusable) {
+              e.preventDefault();
+              lastFocusable.focus();
+            }
+          } else {
+            if (document.activeElement === lastFocusable) {
+              e.preventDefault();
+              firstFocusable.focus();
+            }
+          }
+        }
+        if (e.key === 'Escape') {
+          if (!hotelDetailModal.classList.contains('hidden')) {
+            hotelDetailModal.classList.add('hidden');
+            currentBooking = null;
+          }
+          if (!paymentModal.classList.contains('hidden')) {
+            paymentModal.classList.add('hidden');
+            currentBooking = null;
+          }
+        }
+      });
+    }
+
+    trapFocus(hotelDetailModal);
+    trapFocus(paymentModal);
+  </script>
+ </body>
+</html>
